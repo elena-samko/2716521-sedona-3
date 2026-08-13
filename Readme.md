@@ -1,8 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [ELENA SAMKO](https://up.htmlacademy.ru/htmlcss-individual/3/user/2716521).
-* Наставник: [Екатерина Комнатная] (https://htmlacademy.ru/profile/id215761).
-* Сайт: [My project SEDONA] (https://elena-samko.github.io/2716521-sedona-3/).
+* Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
+* Сайт: [My project SEDONA](https://elena-samko.github.io/2716521-sedona-3/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
