@@ -11,7 +11,7 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <a class="navigation-logo" href="index.html">
         <img class="logo" src="./image/logo.svg" alt="Логотип города Седона" />
       </a>
@@ -32,7 +32,7 @@
         </ul>
       </nav>
 
-      <ul class="navigation-list-navigation-user">
+      <ul class="navigation-list-user">
         <li class="navigation-item">
           <a class="navigation-link" href="#">
             <span class="visually-hidden"> Поиск </span>
@@ -50,8 +50,8 @@
       </ul>
     </header>
 
-    <main class="main-index">
-      <section class="hero">
+    <main class="main-index" data-test="main">
+      <section class="hero" data-test="hero">
         <div class="image-hero">
           <img class="hero-welcome" src="./image/welcome.svg" alt="" />
 
@@ -73,7 +73,7 @@
         </div>
       </section>
 
-      <section class="advantages">
+      <section class="advantages" data-test="advantages">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
 
         <ul class="advantages-list">
@@ -222,7 +222,7 @@
         </div>
       </section>
 
-      <section class="newsletter">
+      <section class="newsletter" data-test="subscribe">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
 
         <p class="newsletter-description">
@@ -253,7 +253,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <div class="socials">
         <ul class="footer-social-list">
           <li class="footer-social-item">
