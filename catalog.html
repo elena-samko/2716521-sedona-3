@@ -1,12 +1,11 @@
-
-<!Doctype html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Гостиницы Седоны
-</title>
+    <link rel="icon" sizes="32x32" href="favicon.ico" />
+    <title>Гостиницы Седоны</title>
   </head>
 
   <body>
@@ -397,12 +396,16 @@
 
         <form
           class="newsletter-form"
-          action="http://echo.htmlacademy.ru"
+          action="https://echo.htmlacademy.ru"
           method="post"
         >
+          <label class="visually-hidden" for="newsletter-email">
+            Ваш e-mail
+          </label>
           <input
             class="field"
             type="email"
+            id="newsletter-email"
             name="newsletter-email"
             placeholder="Ваш e-mail"
             required
