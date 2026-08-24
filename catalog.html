@@ -11,7 +11,7 @@
   <body>
     <header class="page-header" data-test="header">
       <a class="navigation-logo" href="index.html">
-        <img class="logo" src="./image/logo.svg" alt="Логотип города Седона" />
+        <img class="logo" src="./image/logo-sedona.svg" alt="Логотип города Седона" />
       </a>
 
       <nav class="navigation">
@@ -24,7 +24,7 @@
             <a class="navigation-link" href="about.html">О Седоне</a>
           </li>
 
-          <li class="navigation-item-current">
+          <li class="navigation-item navigation-item-current">
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
@@ -165,69 +165,74 @@
                   </li>
                 </ul>
               </fieldset>
+
+              <div class="right-filter-container">
+                <fieldset class="price-filter">
+                  <legend class="price-filter-title">Стоимость, ₽:</legend>
+
+                  <div class="price-inputs">
+                    <label class="price-field">
+                      <input
+                        class="price-input"
+                        type="number"
+                        name="min-price"
+                        value="0"
+                      />
+                      <span>от</span>
+                    </label>
+
+                    <label class="price-field">
+                      <input
+                        class="price-input"
+                        type="number"
+                        name="max-price"
+                        value="9000"
+                      />
+                      <span>до</span>
+                    </label>
+                  </div>
+
+                  <div class="range">
+                    <div class="range-scale">
+                      <div class="range-bar"></div>
+                    </div>
+
+                    <button class="range-toggle range-toggle-min" type="button">
+                      <span class="visually-hidden">Минимальная цена</span>
+                    </button>
+
+                    <button class="range-toggle range-toggle-max" type="button">
+                      <span class="visually-hidden">Максимальная цена</span>
+                    </button>
+                  </div>
+                </fieldset>
+
+                <button class="button catalog-filter-button" type="submit">
+                  Применить
+                </button>
+
+                <button class="button catalog-filter-reset" type="reset">
+                  Сбросить
+                </button>
+              </div>
             </form>
           </div>
         </section>
-        <div class="right-filter-container">
-          <fieldset class="price-filter" data-test="filter">
-            <legend class="price-filter-title">Стоимость, ₽:</legend>
-
-            <div class="price-inputs">
-              <label class="price-field">
-                <input
-                  class="price-input"
-                  type="number"
-                  name="min-price"
-                  value="0"
-                />
-                <span>от</span>
-              </label>
-
-              <label class="price-field">
-                <input
-                  class="price-input"
-                  type="number"
-                  name="max-price"
-                  value="9000"
-                />
-                <span>до</span>
-              </label>
-            </div>
-
-            <div class="range">
-              <div class="range-scale">
-                <div class="range-bar"></div>
-              </div>
-
-              <button class="range-toggle range-toggle-min" type="button">
-                <span class="visually-hidden">Минимальная цена</span>
-              </button>
-
-              <button class="range-toggle range-toggle-max" type="button">
-                <span class="visually-hidden">Максимальная цена</span>
-              </button>
-            </div>
-          </fieldset>
-
-          <button class="button catalog-filter-button" type="submit">
-            Применить
-          </button>
-
-          <button class="button catalog-filter-reset" type="reset">
-            Сбросить
-          </button>
-        </div>
       </section>
+
       <section class="catalog" data-test="catalog">
         <h2 class="catalog-title">Найдено гостиниц: 38</h2>
+
         <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешевое</option>
+          <option value="cheap">Сначала дешёвое</option>
           <option value="popular">Сначала популярное</option>
           <option value="expensive">Сначала дорогое</option>
         </select>
+
         <button class="view-button-current" type="button">
           <span class="visually-hidden">Показать карточки</span>
         </button>
+
         <button class="view-button" type="button">
           <span class="visually-hidden">Показать крупные карточки</span>
         </button>
@@ -243,8 +248,10 @@
             <li class="hotel-gallery-card">
               <img
                 class="hotel-card-image"
-                src="./image/hotel-amara-resort-spa..png"
-                alt="Amara Resort & Spa"
+                src="./image/hotel-amara-resort-spa.webp"
+                width="300"
+                height="212"
+                alt="Amara Resort &amp; Spa"
               />
 
               <h3 class="hotel-card-title">Amara Resort &amp; Spa</h3>
@@ -263,16 +270,17 @@
               </div>
 
               <div class="hotel-card-footer">
-                <span class="hotel-card-stars">4 звезды ★ ★ ★ ★ </span>
-
-                <span class="hotel-card-rating"> Рейтинг: 8,5 </span>
+                <span class="hotel-card-stars">4 звезды</span>
+                <span class="hotel-card-rating">Рейтинг: 8,5</span>
               </div>
             </li>
 
             <li class="hotel-gallery-card">
               <img
                 class="hotel-card-image"
-                src="./image/hotel-villas-at-poco-diablo.png"
+                src="./image/hotel-villas-at-poco-diablo.webp"
+                width="300"
+                height="212"
                 alt="Villas at Poco Diablo"
               />
 
@@ -292,16 +300,17 @@
               </div>
 
               <div class="hotel-card-footer">
-                <span class="hotel-card-stars">4 звезды ★ ★ ★ ★ </span>
-
-                <span class="hotel-card-rating"> Рейтинг: 9,2 </span>
+                <span class="hotel-card-stars">4 звезды</span>
+                <span class="hotel-card-rating">Рейтинг: 9,2</span>
               </div>
             </li>
 
             <li class="hotel-gallery-card">
               <img
                 class="hotel-card-image"
-                src="./image/hotel-desert-quail-inn.png"
+                src="./image/hotel-desert-quail-inn.webp"
+                width="300"
+                height="212"
                 alt="Desert Quail Inn"
               />
 
@@ -321,15 +330,17 @@
               </div>
 
               <div class="hotel-card-footer">
-                <span class="hotel-card-stars">3 звезды ★ ★ ★ </span>
-
-                <span class="hotel-card-rating"> Рейтинг: 6,9 </span>
+                <span class="hotel-card-stars">3 звезды</span>
+                <span class="hotel-card-rating">Рейтинг: 6,9</span>
               </div>
             </li>
+
             <li class="hotel-gallery-card">
               <img
                 class="hotel-card-image"
-                src="./image/hotel-greentree-inn.png"
+                src="./image/hotel-greentree-inn.webp"
+                width="300"
+                height="212"
                 alt="GreenTree Inn"
               />
 
@@ -349,14 +360,14 @@
               </div>
 
               <div class="hotel-card-footer">
-                <span class="hotel-card-stars"> 2 звезды★ ★ </span>
-
-                <span class="hotel-card-rating"> Рейтинг: 5,0 </span>
+                <span class="hotel-card-stars">2 звезды</span>
+                <span class="hotel-card-rating">Рейтинг: 5,0</span>
               </div>
             </li>
           </ul>
         </section>
-        <section class="pagination>">
+
+        <div class="pagination">
           <ul class="pagination-list">
             <li class="pagination-item">
               <a class="pagination-link-current" href="#">1</a>
@@ -382,8 +393,9 @@
               <a class="pagination-link" href="#">10</a>
             </li>
           </ul>
-        </section>
+        </div>
       </section>
+
       <section class="newsletter" data-test="subscribe">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
 
@@ -393,12 +405,13 @@
 
         <form
           class="newsletter-form"
-          action="https://echo.htmlacademy.ru"
+          action="https://echo.htmlacademy.ru/"
           method="post"
         >
           <label class="visually-hidden" for="newsletter-email">
             Ваш e-mail
           </label>
+
           <input
             class="field"
             type="email"
@@ -409,7 +422,7 @@
           />
 
           <button class="button-newsletter-button" type="submit">
-            <span class="newsletter-subscribe"> Подписаться </span>
+            <span class="newsletter-subscribe">Подписаться</span>
           </button>
         </form>
       </section>
@@ -420,19 +433,19 @@
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden"> ВКонтакте </span>
+              <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
 
           <li class="footer-social-item">
             <a class="button" href="https://t.me/htmlacademy">
-              <span class="visually-hidden"> Telegram </span>
+              <span class="visually-hidden">Telegram</span>
             </a>
           </li>
 
           <li class="footer-social-item">
             <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden"> YouTube </span>
+              <span class="visually-hidden">YouTube</span>
             </a>
           </li>
         </ul>
@@ -446,11 +459,7 @@
 
       <div class="html-academy">
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-          <img
-            class="html-academy-logo"
-            src="./image/html-academy-logo.svg"
-            alt="HTML Academy"
-          />
+          <span class="visually-hidden">HTML Academy</span>
         </a>
       </div>
     </footer>
