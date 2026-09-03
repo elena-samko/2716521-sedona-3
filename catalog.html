@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <link rel="icon" sizes="32x32" href="favicon.ico" />
     <title>Гостиницы Седоны</title>
   </head>
 
   <body>
-    <header class="page-header" data-test="header">
+     <header class="page-header" data-test="header">
       <a class="navigation-logo" href="index.html">
         <img
           class="logo"
@@ -20,44 +20,45 @@
         />
       </a>
 
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+      <nav class="header-navigation">
+        <ul class="header-list">
+          <li class="header-main current">
+            <a class="header-link-main" href="index.html"> Главная </a>
           </li>
 
-          <li class="navigation-item">
-            <a class="navigation-link" href="about.html">О Седоне</a>
+          <li class="header-about">
+            <a class="header-link-about" href="about.html"> О Седоне </a>
           </li>
 
-          <li class="navigation-item navigation-item-current">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          <li class="header-catalog">
+            <a class="header-link-catalog" href="catalog.html">
+              Гостиницы
+            </a>
           </li>
         </ul>
       </nav>
 
-      <ul class="navigation-list-user">
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <span class="visually-hidden">Поиск</span>
+      <ul class="header-user">
+        <li class="header-search">
+          <a class="header-search-link" href="#">
+            <span class="visually-hidden"> Поиск </span>
           </a>
         </li>
 
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <span class="visually-hidden">Избранное</span>
+        <li class="header-favorites">
+          <a class="header-favorites-link" href="#">
+            <span class="visually-hidden"> Избранное <span>12</span> </span>
           </a>
         </li>
 
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Хочу сюда!</a>
-        </li>
       </ul>
+
+      <a class="button button-header-braun" href="#"> Хочу сюда! </a>
     </header>
 
-    <main class="main-inner" data-test="main">
-      <section class="search" data-test="search">
-        <h1 class="search-title">Гостиницы Седоны</h1>
+    <main class="main-containier main-inner" data-test="main">
+      <section class="search-catalog" data-test="search">
+        <h1 class="search-catalog-title">Гостиницы Седоны</h1>
 
         <ul class="breadcrumbs-list">
           <li class="breadcrumbs-item">
@@ -203,6 +204,7 @@
                       <div class="range-bar"></div>
                     </div>
 
+
                     <button class="range-toggle range-toggle-min" type="button">
                       <span class="visually-hidden">Минимальная цена</span>
                     </button>
@@ -212,12 +214,14 @@
                     </button>
                   </div>
                 </fieldset>
+               </div>
+                <div class="button button-filter">
 
-                <button class="button catalog-filter-button" type="submit">
+                <button class="button button-blue" type="submit">
                   Применить
                 </button>
 
-                <button class="button catalog-filter-reset" type="reset">
+                <button class="button button-reset" type="reset">
                   Сбросить
                 </button>
               </div>
@@ -227,6 +231,7 @@
       </section>
 
       <section class="catalog" data-test="catalog">
+        <div class="sorting-containier">
         <h2 class="catalog-title">Найдено гостиниц: 38</h2>
 
         <select class="select-control" aria-label="Сортировка">
@@ -235,17 +240,20 @@
           <option value="expensive">Сначала дорогое</option>
         </select>
 
-        <button class="view-button-current" type="button">
+        <div class="view-button-group">
+        <button class="view-button grid current" type="button">
           <span class="visually-hidden">Показать карточки</span>
         </button>
 
-        <button class="view-button" type="button">
+        <button class="view-button card " type="button">
           <span class="visually-hidden">Показать крупные карточки</span>
         </button>
 
-        <button class="view-button" type="button">
+        <button class="view-button list" type="button">
           <span class="visually-hidden">Показать список</span>
         </button>
+        </div>
+        </div>
 
         <section class="hotels-gallery">
           <h2 class="visually-hidden">Список гостиниц</h2>
@@ -264,13 +272,13 @@
 
               <div class="hotel-card-info">
                 <span class="hotel-type">Гостиница</span>
-                <b class="hotel-price">От 4000 ₽</b>
+                <span class="hotel-price">От 4000 ₽</span>
               </div>
 
               <div class="hotel-card-buttons">
-                <a class="button hotel-card-more" href="#">Подробнее</a>
+                <a class="button button-more-braun" href="#">Подробнее</a>
 
-                <button class="button hotel-card-favorite" type="button">
+                <button class="button button-add-blue" type="button">
                   В избранном
                 </button>
               </div>
@@ -294,13 +302,13 @@
 
               <div class="hotel-card-info">
                 <span class="hotel-type">Гостиница</span>
-                <b class="hotel-price">От 5000 ₽</b>
+                <span class="hotel-price">От 5000 ₽</span>
               </div>
 
               <div class="hotel-card-buttons">
-                <a class="button hotel-card-more" href="#">Подробнее</a>
+                <a class="button button-more-braun" href="#">Подробнее</a>
 
-                <button class="button hotel-card-favorite" type="button">
+                <button class="button button-add-blue" type="button">
                   В избранном
                 </button>
               </div>
@@ -324,13 +332,13 @@
 
               <div class="hotel-card-info">
                 <span class="hotel-type">Гостиница</span>
-                <b class="hotel-price">От 2500 ₽</b>
+                <span class="hotel-price">От 2500 ₽</span>
               </div>
 
               <div class="hotel-card-buttons">
-                <a class="button hotel-card-more" href="#">Подробнее</a>
+                <a class="button button-more-braun" href="#">Подробнее</a>
 
-                <button class="button hotel-card-favorite" type="button">
+                <button class="button button-add-blue" type="button">
                   В избранном
                 </button>
               </div>
@@ -354,13 +362,13 @@
 
               <div class="hotel-card-info">
                 <span class="hotel-type">Гостиница</span>
-                <b class="hotel-price">От 1500 ₽</b>
+                <span class="hotel-price">От 1500 ₽</span>
               </div>
 
               <div class="hotel-card-buttons">
-                <a class="button hotel-card-more" href="#">Подробнее</a>
+                <a class="button button-more-braun" href="#">Подробнее</a>
 
-                <button class="button hotel-card-favorite" type="button">
+                <button class="button button-add-blue" type="button">
                   В избранном
                 </button>
               </div>
@@ -375,8 +383,8 @@
 
         <div class="pagination">
           <ul class="pagination-list">
-            <li class="pagination-item">
-              <a class="pagination-link-current" href="#">1</a>
+            <li class="pagination-item current">
+              <a class="pagination-link current" href="#">1</a>
             </li>
 
             <li class="pagination-item">
@@ -433,28 +441,29 @@
         </form>
       </section>
     </main>
-
-    <footer class="page-footer" data-test="footer">
+ <footer class="page-footer" data-test="footer">
+      <div class="page-footer-container">
       <div class="socials">
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">ВКонтакте</span>
+            <a class="button-icon footer-social-vk" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden"> ВКонтакте </span>
             </a>
           </li>
 
           <li class="footer-social-item">
-            <a class="button" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Telegram</span>
+            <a class="utton-icon footer-social-tg" href="https://t.me/htmlacademy">
+              <span class="visually-hidden"> Telegram </span>
             </a>
           </li>
 
           <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">YouTube</span>
+            <a class="utton-icon footer-social-yt" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden"> YouTube </span>
             </a>
           </li>
         </ul>
+
       </div>
 
       <div class="phone">
@@ -464,10 +473,11 @@
       </div>
 
       <div class="html-academy">
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-          <span class="visually-hidden">HTML Academy</span>
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/"
+          ><img class="htmlacademy-logo" src="./image/logo-htmlacademy.svg" />
         </a>
       </div>
+    </div>
     </footer>
   </body>
 </html>
