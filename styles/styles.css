@@ -224,27 +224,27 @@ h3 {
   display: block;
   width: 44px;
   height: 64px;
-  background: url("/image/icon-search.svg") center / contain no-repeat;
+  background: url("./image/icon-search.svg") center / contain no-repeat;
   background-size: 20px;
 }
 .header-favorites {
   display: block;
   width: 44px;
   height: 64px;
-  background: url("/image/icon-heart.svg") center / contain no-repeat;
+  background: url("./image/icon-heart.svg") center / contain no-repeat;
   background-size: 20px;
 }
 
 .header-search-link {
   display: block;
   width: 44px;
-  background-image: url("/image/icon-search.svg");
+  background-image: url("./image/icon-search.svg");
 }
 
 .header-favorites-link {
   display: block;
   width: 44px;
-  background-image: url("/image/icon-heart.svg");
+  background-image: url("./image/icon-heart.svg");
 }
 .search-button {
   margin-right: 70px;
@@ -274,8 +274,8 @@ h3 {
 .image-hero {
   background: #83b3d3;
   background:
-    url("/image/divider.svg") bottom / 100% no-repeat,
-    url("/image/index-background.webp") center / cover no-repeat;
+    url("./image/divider.svg") bottom / 100% no-repeat,
+    url("./image/index-background.webp") center / cover no-repeat;
   padding: 0;
   height: 485px;
   overflow: hidden;
@@ -422,7 +422,7 @@ breadcrumbs-link {
 
 .house-icon {
   display: block;
-  background-image: url("/image/icon-house.svg") center / cover no-repeat;
+  background-image: url("./image/icon-house.svg") center / cover no-repeat;
   background-size: 75px 72px;
 }
 /* SEARCH */
@@ -446,7 +446,7 @@ breadcrumbs-link {
   margin-bottom: 54px;
 }
 .search-catalog {
-  background: url("/image/filter-background.webp") center / cover no-repeat;
+  background: url("./image/filter-background.webp") center / cover no-repeat;
   color: rgb(255, 255, 255);
   box-sizing: border-box;
   padding: 35px 70px;
@@ -538,16 +538,16 @@ breadcrumbs-link {
 
 }
 .view-button.grid {
-  background: url("/image/icon-mode-greed.svg") center / cover no-repeat;
+  background: url("./image/icon-mode-greed.svg") center / cover no-repeat;
   background-size: 16px 14px;
 
 }
 .view-button.card{
-  background: url("/image/icon-mode-card.svg") center / cover no-repeat;
+  background: url("./image/icon-mode-card.svg") center / cover no-repeat;
   background-size: 16px 14px;
 }
 .view-button.list {
- background: url("/image/icon-mode-list.svg") center / cover no-repeat;
+ background: url("./image/icon-mode-list.svg") center / cover no-repeat;
   background-size: 16px 14px;
 }
 
@@ -603,7 +603,7 @@ breadcrumbs-link {
   display: block;
   width: 140px;
   height: 37px;
-  background: url("/image/icon-star.svg") left / contain repeat-x;
+  background: url("./image/icon-star.svg") left / contain repeat-x;
 }
 
 .hotel-card-rating {
@@ -617,7 +617,7 @@ breadcrumbs-link {
 .newsletter {
   box-sizing: border-box;
   padding: 96px 258px 104px;
-  background: url("/image/subscribe-background.webp") center / cover no-repeat;
+  background: url("./image/subscribe-background.webp") center / cover no-repeat;
 }
 
 .newsletter-title {
@@ -704,7 +704,7 @@ breadcrumbs-link {
   width: 48px;
   height: 48px;
 
-  background: url("/image/social-vk.svg") center / contain no-repeat;
+  background: url("./image/social-vk.svg") center / contain no-repeat;
   background-size: 18px 16px;
 }
 
@@ -713,7 +713,7 @@ breadcrumbs-link {
   width: 48px;
   height: 48px;
 
-  background: url("/image/social-telegram.svg") center / contain no-repeat;
+  background: url("./image/social-telegram.svg") center / contain no-repeat;
   background-size: 18px 16px;
 }
 
@@ -722,7 +722,7 @@ breadcrumbs-link {
   width: 48px;
   height: 48px;
 
-  background: url("/image/social-youtube.svg") center / contain no-repeat;
+  background: url("./image/social-youtube.svg") center / contain no-repeat;
   background-size: 18px 16px;
 }
 
