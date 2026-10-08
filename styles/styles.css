@@ -134,11 +134,11 @@ body {
 }
 
 .search-icon {
-  background: url("./image/icon-search.svg") no-repeat center;
+  background: url("../image/icon-search.svg") no-repeat center;
 }
 
 .heart-icon {
-  background: url("./image/icon-heart.svg") no-repeat center;
+  background: url("../image/icon-heart.svg") no-repeat center;
 }
 
 .favorites-count {
@@ -365,7 +365,7 @@ body {
 
 .subscribe-background {
   color: #ffffff;
-  background-image: url("./image/subscribe-background.webp");
+  background-image: url("../image/subscribe-background.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #486778;
@@ -400,7 +400,7 @@ body {
 
 .inner-header {
   padding: 35px 70px 73px;
-  background-image: url("./image/filter-background.webp");
+  background-image: url("../image/filter-background.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #87aecd;
@@ -682,7 +682,7 @@ body {
   line-height: 21px;
   color: inherit;
   border: 2px solid #e5e5e5;
-  background: url("./image/icon-select.svg") no-repeat right 18px center;
+  background: url("../image/icon-select.svg") no-repeat right 18px center;
   border-radius: 4px;
   appearance: none;
 }
