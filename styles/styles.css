@@ -167,8 +167,9 @@ body {
   padding: 50px 371px 79px;
    background: #83b3d3;
     background:
-    url("../image/divider.svg") bottom / 100% no-repeat,
+    url("../image/divider.svg") center bottom -1px/ 100% no-repeat,
     url("../image/index-background.webp") center / cover no-repeat;
+
 
 }
 
@@ -365,7 +366,7 @@ body {
 
 .subscribe-background {
   color: #ffffff;
-  background-image: url("../image/subscribe-background.webp");
+  background-image: url("../image/filter-background.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #486778;
@@ -451,6 +452,8 @@ body {
 
 .catalog {
   padding: 50px 70px 60px;
+  width: 1200px;
+  height: 1235px;
 }
 
 .catalog-filter {
@@ -1017,4 +1020,365 @@ body {
 .btn-transparent:active {
   color: rgba(255, 255, 255, 0.3);
   outline: none;
+}
+/* MODAL */
+
+/* MODAL */
+
+.modal-container {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal-hidden {
+  display: none;
+}
+
+.modal {
+  position: relative;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  width: 717px;
+  margin: auto;
+  padding: 64px 70px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* Кнопка закрытия */
+
+.modal-close-btn {
+  position: absolute;
+  top: 64px;
+  right: 52px;
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.modal-close-btn::before {
+  position: absolute;
+  inset: 0;
+  background: url("../image/cross.svg") no-repeat center;
+  content: "";
+}
+
+.modal-close-btn:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-close-btn:focus-visible {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+.modal-close-btn:active::before {
+  opacity: 0.3;
+}
+
+/* Заголовок */
+
+.modal-title {
+  margin: 0 0 64px;
+  padding-right: 40px;
+}
+
+/* Форма */
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Строки дат */
+
+.modal-date-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 23px;
+}
+
+.form-label {
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: none;
+}
+
+.modal-date-row > .form-label {
+  flex: 0 0 137px;
+  padding-top: 12px;
+}
+
+.form-field {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* Поля */
+
+.form-input {
+  box-sizing: border-box;
+  height: 48px;
+  margin: 0;
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.form-field .form-input {
+  width: 100%;
+  padding: 12px 60px 12px 20px;
+  background-image: url("../image/date.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
+.form-input:hover {
+  background-color: #e6e6e6;
+}
+
+.form-input:focus-visible {
+  outline: 3px solid #83b3d3;
+}
+
+/* Стандартная кнопка календаря прозрачна,
+   но остаётся кликабельной поверх серого значка */
+
+.form-field input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 48px;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Сообщения */
+
+.form-message {
+  margin-top: 4px;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.invalid-message {
+  color: #ff5757;
+}
+
+/* Общая строка гостей:
+   взрослые слева, дети справа */
+
+.modal-guests {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-guest-group {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+/* Счётчик взрослых начинается там же, где поля дат */
+
+.modal-adults > .form-label {
+  flex: 0 0 137px;
+}
+
+/* Расстояние от группы «Дети + значок»
+   до края счётчика */
+
+.modal-children {
+  gap: 46px;
+}
+
+/* Подпись и кружок информации */
+
+.label-wraper {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+}
+
+/* Счётчики */
+
+.form-counter {
+  display: flex;
+  flex: 0 0 110px;
+  width: 110px;
+}
+
+.form-counter .form-input {
+  flex: 0 0 30px;
+  width: 30px;
+  min-width: 0;
+  padding: 0;
+  border-radius: 0;
+  text-align: center;
+  appearance: textfield;
+}
+
+.form-counter input::-webkit-outer-spin-button,
+.form-counter input::-webkit-inner-spin-button {
+  margin: 0;
+  appearance: none;
+}
+
+/* Плюс и минус фоновыми картинками */
+
+.counter-btn {
+  flex: 0 0 40px;
+  width: 40px;
+  height: 48px;
+  padding: 0;
+  border: none;
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.btn-minus {
+  background-image: url("../image/minus.svg");
+  border-radius: 4px 0 0 4px;
+}
+
+.btn-plus {
+  background-image: url("../image/plus.svg");
+  border-radius: 0 4px 4px 0;
+}
+
+.counter-btn:hover {
+  background-color: #e6e6e6;
+}
+
+.counter-btn:focus-visible {
+  position: relative;
+  z-index: 1;
+  outline: 3px solid #83b3d3;
+  outline-offset: -3px;
+}
+
+.counter-btn:active {
+  background-color: #d9d9d9;
+}
+
+/* Подсказка */
+
+.tooltip {
+  position: relative;
+  display: block;
+  flex-shrink: 0;
+}
+
+.tooltip-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #83b3d3;
+  cursor: pointer;
+}
+
+.tooltip-toggle:focus-visible {
+  outline: 3px solid #756157;
+  outline-offset: 2px;
+}
+
+.tooltip-text {
+  position: absolute;
+  top: 41px;
+  left: 50%;
+  z-index: 2;
+  display: none;
+  box-sizing: border-box;
+  width: 256px;
+  margin: 0;
+  padding: 19px 19px 23px 23px;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #333333;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  transform: translateX(-50%);
+}
+
+/* Мостик между кружком и облачком */
+
+.tooltip-text::before {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 100%;
+  height: 15px;
+  content: "";
+}
+
+/* Треугольник */
+
+.tooltip-text::after {
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  width: 19px;
+  height: 9px;
+  background-color: #333333;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  transform: translateX(-50%);
+  content: "";
+}
+
+.tooltip:hover .tooltip-text,
+.tooltip:focus-within .tooltip-text {
+  display: block;
+}
+
+/* Кнопка «Найти» */
+
+.modal-form .modal-form-submit {
+  width: 100%;
+  margin-top: 48px;
+  padding: 18px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 24px;
 }

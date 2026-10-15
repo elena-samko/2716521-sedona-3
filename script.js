@@ -1,11 +1,12 @@
-window.addEventListener("scroll", () => {
-  sessionStorage.setItem("scrollPosition", window.scrollY);
+const openButton = document.querySelector("#open-modal");
+const closeButton = document.querySelector(".modal-close-btn");
+const modal = document.querySelector(".modal-container");
+
+openButton.addEventListener("click", function () {
+  modal.classList.remove("modal-hidden");
 });
 
-window.addEventListener("DOMContentLoaded", () => {
-  const scrollPosition = sessionStorage.getItem("scrollPosition");
-
-  if (scrollPosition) {
-    window.scrollTo(0, Number(scrollPosition));
-  }
+closeButton.addEventListener("click", function () {
+  modal.classList.add("modal-hidden");
+  openButton.focus();
 });
