@@ -92,6 +92,7 @@ body {
   margin: 0;
   margin-right: auto;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .nav-link {
@@ -123,6 +124,7 @@ body {
   margin: 0;
   margin-right: 20px;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .nav-user-link {
@@ -625,7 +627,7 @@ body {
 }
 
 .catalog-filter-submit {
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .catalog-filter-buttons:focus-visible {
@@ -769,6 +771,7 @@ body {
   margin-bottom: 40px;
   border-bottom: 1px solid #e5e5e5;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .hotels-card {
@@ -912,6 +915,7 @@ body {
   padding: 0;
   list-style: none;
   min-width: 150px;
+  flex-wrap: wrap;
 }
 
 .footer-social-link {
@@ -936,6 +940,7 @@ body {
   line-height: 40px;
   color: #000000;
   text-decoration: none;
+  flex-wrap: wrap;
 }
 
 .footer-contact-number:hover,
@@ -951,6 +956,7 @@ body {
   display: block;
   width: 115px;
   height: 33px;
+  flex-wrap: wrap;
 }
 
 .footer-logo-link:hover svg,
