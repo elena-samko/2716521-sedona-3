@@ -44,12 +44,17 @@
               </a>
             </li>
           </ul>
-          <a href="#" class="btn btn-brown btn-action" id="open-modal">Хочу сюда!</a>
+          <a href="#" class="btn btn-brown btn-action" id="open-modal"
+            >Хочу сюда!</a
+          >
         </nav>
       </header>
       <main class="main-index main-containier" data-test="main">
         <section class="hero" data-test="hero">
-          <h1 class="visually-hidden">Добро пожаловать в великолепную Седону — потому что Гранд-Каньон отстой!</h1>
+          <h1 class="visually-hidden">
+            Добро пожаловать в великолепную Седону — потому что Гранд-Каньон
+            отстой!
+          </h1>
           <img
             src="./image/welcome.svg"
             width="458"
@@ -133,7 +138,8 @@
             <li class="services-item house-icon">
               <h3 class="item-title">Жильё</h3>
               <p class="item-subtitle">
-                Рекомендуем пожить <br />в настоящем мотеле,<br />всё как в кино!
+                Рекомендуем пожить <br />в настоящем мотеле,<br />всё как в
+                кино!
               </p>
             </li>
             <li class="services-item food-icon">
@@ -222,7 +228,10 @@
             </a>
           </li>
           <li class="footer-social-item">
-            <a href="https://www.youtube.com/user/htmlacademyru" class="footer-social-link">
+            <a
+              href="https://www.youtube.com/user/htmlacademyru"
+              class="footer-social-link"
+            >
               <span class="visually-hidden">YouTube</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -241,10 +250,7 @@
         <a href="tel:88128121212" class="footer-contact-number"
           >+7 (812) 812-12-12</a
         >
-        <a
-          href="https://htmlacademy.ru"
-          class="footer-logo-link"
-        >
+        <a href="https://htmlacademy.ru" class="footer-logo-link">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="115"
@@ -261,164 +267,157 @@
         </a>
       </footer>
     </div>
-   <div class="modal-container modal-hidden">
-  <div class="modal">
-    <button class="modal-close-btn" type="button">
-      <span class="visually-hidden">Закрыть</span>
-    </button>
+    <div class="modal-container modal-hidden">
+      <div class="modal">
+        <button class="modal-close-btn" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
 
-    <section class="modal-content" aria-labelledby="modal-title">
-      <h2 class="modal-title block-title" id="modal-title">
-        Поиск гостиницы в Седоне
-      </h2>
+        <section class="modal-content" aria-labelledby="modal-title">
+          <h2 class="modal-title block-title" id="modal-title">
+            Поиск гостиницы в Седоне
+          </h2>
 
-      <form
-        action="https://echo.htmlacademy.ru/"
-        method="post"
-        class="modal-form"
-      >
-        <div class="modal-date-row">
-          <label class="form-label" for="arrival-date">
-            Дата заезда:
-          </label>
-
-          <div class="form-field">
-            <input
-              class="form-input"
-              id="arrival-date"
-              name="arrival-date"
-              type="date"
-              value="2020-04-27"
-              aria-describedby="arrival-message"
-              required
-            />
-
-            <span
-              class="form-message invalid-message"
-              id="arrival-message"
-            >
-              Мы не можем отправить вас в прошлое.
-            </span>
-          </div>
-        </div>
-
-        <div class="modal-date-row">
-          <label class="form-label" for="departure-date">
-            Дата выезда:
-          </label>
-
-          <div class="form-field">
-            <input
-              class="form-input"
-              id="departure-date"
-              name="departure-date"
-              type="date"
-              value="2023-09-01"
-              aria-describedby="departure-message"
-              required
-            />
-
-            <span class="form-message" id="departure-message">
-              На эти даты есть свободные номера. Пока есть.
-            </span>
-          </div>
-        </div>
-
-        <div class="modal-guests">
-          <div class="modal-guest-group modal-adults">
-            <label class="form-label" for="adults">
-              Взрослые:
-            </label>
-
-            <div class="form-counter">
-              <button
-                class="counter-btn btn-minus"
-                type="button"
-                aria-label="Уменьшить количество взрослых"
-              ></button>
-
-              <input
-                class="form-input"
-                id="adults"
-                name="adults"
-                type="number"
-                min="1"
-                value="2"
-                required
-              />
-
-              <button
-                class="counter-btn btn-plus"
-                type="button"
-                aria-label="Увеличить количество взрослых"
-              ></button>
-            </div>
-          </div>
-
-          <div class="modal-guest-group modal-children">
-            <div class="label-wraper">
-              <label class="form-label" for="children">
-                Дети:
+          <form
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+            class="modal-form"
+          >
+            <div class="modal-date-row">
+              <label class="form-label" for="arrival-date">
+                Дата заезда:
               </label>
 
-              <span class="tooltip">
-                <button
-                  class="tooltip-toggle"
-                  type="button"
-                  aria-label="Информация о возрасте детей"
-                  aria-describedby="children-tooltip"
-                >
-                  <span aria-hidden="true">i</span>
-                </button>
+              <div class="form-field">
+                <input
+                  class="form-input"
+                  id="arrival-date"
+                  name="arrival-date"
+                  type="date"
+                  value="2020-04-27"
+                  aria-describedby="arrival-message"
+                  required
+                />
 
-                <span
-                  class="tooltip-text"
-                  id="children-tooltip"
-                  role="tooltip"
-                >
-                  Укажите количество детей, которые будут с вами,
-                  возраст которых от 6 до 18 лет.
-                  Дети до 6 лет размещаются бесплатно.
+                <span class="form-message invalid-message" id="arrival-message">
+                  Мы не можем отправить вас в прошлое.
                 </span>
-              </span>
+              </div>
             </div>
 
-            <div class="form-counter">
-              <button
-                class="counter-btn btn-minus"
-                type="button"
-                aria-label="Уменьшить количество детей"
-              ></button>
+            <div class="modal-date-row">
+              <label class="form-label" for="departure-date">
+                Дата выезда:
+              </label>
 
-              <input
-                class="form-input"
-                id="children"
-                name="children"
-                type="number"
-                min="0"
-                value="2"
-                required
-              />
+              <div class="form-field">
+                <input
+                  class="form-input"
+                  id="departure-date"
+                  name="departure-date"
+                  type="date"
+                  value="2023-09-01"
+                  aria-describedby="departure-message"
+                  required
+                />
 
-              <button
-                class="counter-btn btn-plus"
-                type="button"
-                aria-label="Увеличить количество детей"
-              ></button>
+                <span class="form-message" id="departure-message">
+                  На эти даты есть свободные номера. Пока есть.
+                </span>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <button
-          class="modal-form-submit btn btn-blue btn-large"
-          type="submit"
-        >
-          Найти
-        </button>
-      </form>
-    </section>
-  </div>
-</div>
-  <script src="script.js"></script>
+            <div class="modal-guests">
+              <div class="modal-guest-group modal-adults">
+                <label class="form-label" for="adults"> Взрослые: </label>
+
+                <div class="form-counter">
+                  <button
+                    class="counter-btn btn-minus"
+                    type="button"
+                    aria-label="Уменьшить количество взрослых"
+                  ></button>
+
+                  <input
+                    class="form-input"
+                    id="adults"
+                    name="adults"
+                    type="number"
+                    min="1"
+                    value="2"
+                    required
+                  />
+
+                  <button
+                    class="counter-btn btn-plus"
+                    type="button"
+                    aria-label="Увеличить количество взрослых"
+                  ></button>
+                </div>
+              </div>
+
+              <div class="modal-guest-group modal-children">
+                <div class="label-wraper">
+                  <label class="form-label" for="children"> Дети: </label>
+
+                  <span class="tooltip">
+                    <button
+                      class="tooltip-toggle"
+                      type="button"
+                      aria-label="Информация о возрасте детей"
+                      aria-describedby="children-tooltip"
+                    >
+                      <span aria-hidden="true">i</span>
+                    </button>
+
+                    <span
+                      class="tooltip-text"
+                      id="children-tooltip"
+                      role="tooltip"
+                    >
+                      Укажите количество детей, которые будут с вами, возраст
+                      которых от 6 до 18 лет. Дети до 6 лет размещаются
+                      бесплатно.
+                    </span>
+                  </span>
+                </div>
+
+                <div class="form-counter">
+                  <button
+                    class="counter-btn btn-minus"
+                    type="button"
+                    aria-label="Уменьшить количество детей"
+                  ></button>
+
+                  <input
+                    class="form-input"
+                    id="children"
+                    name="children"
+                    type="number"
+                    min="0"
+                    value="2"
+                    required
+                  />
+
+                  <button
+                    class="counter-btn btn-plus"
+                    type="button"
+                    aria-label="Увеличить количество детей"
+                  ></button>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="modal-form-submit btn btn-blue btn-large"
+              type="submit"
+            >
+              Найти
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>

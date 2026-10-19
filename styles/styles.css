@@ -165,12 +165,10 @@ body {
 /* HERO*/
 .hero {
   padding: 50px 371px 79px;
-   background: #83b3d3;
-    background:
+  background: #83b3d3;
+  background:
     url("../image/divider.svg") center bottom -1px/ 100% no-repeat,
     url("../image/index-background.webp") center / cover no-repeat;
-
-
 }
 
 /* ADVANTAGES */
@@ -442,12 +440,12 @@ body {
   display: block;
   width: 8px;
   height: 21px;
-  background: url("./image/icon-breadcrumbs.svg") no-repeat center;
+  background: url("../image/icon-breadcrumbs.svg") no-repeat center;
   content: "";
 }
 
 .breadcrumbs-link-home {
-  background: url("./image/icon-home-breadcrumbs.svg") no-repeat center;
+  background: url("../image/icon-home-breadcrumbs.svg") no-repeat center;
 }
 
 .catalog {
@@ -1023,7 +1021,6 @@ body {
 }
 /* MODAL */
 
-/* MODAL */
 
 .modal-container {
   position: fixed;
@@ -1051,7 +1048,7 @@ body {
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 }
 
-/* Кнопка закрытия */
+
 
 .modal-close-btn {
   position: absolute;
@@ -1086,21 +1083,21 @@ body {
   opacity: 0.3;
 }
 
-/* Заголовок */
+
 
 .modal-title {
   margin: 0 0 64px;
   padding-right: 40px;
 }
 
-/* Форма */
+
 
 .modal-form {
   display: flex;
   flex-direction: column;
 }
 
-/* Строки дат */
+
 
 .modal-date-row {
   display: flex;
@@ -1130,7 +1127,7 @@ body {
   min-width: 0;
 }
 
-/* Поля */
+
 
 .form-input {
   box-sizing: border-box;
@@ -1162,8 +1159,7 @@ body {
   outline: 3px solid #83b3d3;
 }
 
-/* Стандартная кнопка календаря прозрачна,
-   но остаётся кликабельной поверх серого значка */
+
 
 .form-field input[type="date"]::-webkit-calendar-picker-indicator {
   position: absolute;
@@ -1177,7 +1173,7 @@ body {
   cursor: pointer;
 }
 
-/* Сообщения */
+
 
 .form-message {
   margin-top: 4px;
@@ -1191,8 +1187,7 @@ body {
   color: #ff5757;
 }
 
-/* Общая строка гостей:
-   взрослые слева, дети справа */
+
 
 .modal-guests {
   display: flex;
@@ -1206,20 +1201,18 @@ body {
   align-items: center;
 }
 
-/* Счётчик взрослых начинается там же, где поля дат */
+
 
 .modal-adults > .form-label {
   flex: 0 0 137px;
 }
 
-/* Расстояние от группы «Дети + значок»
-   до края счётчика */
 
 .modal-children {
   gap: 46px;
 }
 
-/* Подпись и кружок информации */
+
 
 .label-wraper {
   display: flex;
@@ -1229,7 +1222,7 @@ body {
   margin: 0;
 }
 
-/* Счётчики */
+
 
 .form-counter {
   display: flex;
@@ -1252,8 +1245,6 @@ body {
   margin: 0;
   appearance: none;
 }
-
-/* Плюс и минус фоновыми картинками */
 
 .counter-btn {
   flex: 0 0 40px;
@@ -1292,7 +1283,6 @@ body {
   background-color: #d9d9d9;
 }
 
-/* Подсказка */
 
 .tooltip {
   position: relative;
@@ -1342,7 +1332,7 @@ body {
   transform: translateX(-50%);
 }
 
-/* Мостик между кружком и облачком */
+
 
 .tooltip-text::before {
   position: absolute;
@@ -1353,7 +1343,7 @@ body {
   content: "";
 }
 
-/* Треугольник */
+
 
 .tooltip-text::after {
   position: absolute;
@@ -1372,7 +1362,7 @@ body {
   display: block;
 }
 
-/* Кнопка «Найти» */
+
 
 .modal-form .modal-form-submit {
   width: 100%;
