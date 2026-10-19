@@ -162,6 +162,7 @@ body {
 .main-containier {
   flex-grow: 1;
 }
+
 /* HERO*/
 .hero {
   padding: 50px 371px 79px;
@@ -840,7 +841,7 @@ body {
   text-align: center;
 }
 
-.pagination-item:not(:has(a)) {
+.pagination-item:not(:has(.pagination-link)) {
   width: 60px;
 }
 
@@ -860,13 +861,13 @@ body {
   border: 1px solid transparent;
 }
 
-.pagination-item:hover a:not(.pagination-link-current),
-.pagination-item:focus-visible a:not(.pagination-link-current) {
+.pagination-item:hover .pagination-link:not(.pagination-link-current),
+.pagination-item:focus-visible .pagination-link:not(.pagination-link-current) {
   border-color: #82b3d3;
   background-color: #68a2ca;
 }
 
-.pagination-item:active a:not(.pagination-link-current) {
+.pagination-item:active .pagination-link:not(.pagination-link-current) {
   color: rgba(255, 255, 255, 0.3);
   background-color: #82b3d3;
 }
@@ -1019,6 +1020,7 @@ body {
   color: rgba(255, 255, 255, 0.3);
   outline: none;
 }
+
 /* MODAL */
 
 
@@ -1282,6 +1284,7 @@ body {
 .counter-btn:active {
   background-color: #d9d9d9;
 }
+
 
 
 .tooltip {
