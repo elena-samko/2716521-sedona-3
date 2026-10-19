@@ -44,7 +44,7 @@
               </a>
             </li>
           </ul>
-          <a href="#" class="btn btn-brown btn-action" id="open-modal"
+          <a href="#" class="btn btn-brown btn-action"
             >Хочу сюда!</a
           >
         </nav>
@@ -164,7 +164,7 @@
             Укажите предполагаемые даты поездки,<br />и мы покажем вам лучшие
             предложения гостиниц в Седоне
           </p>
-          <button class="btn btn-brown btn-large" type="button">
+          <button class="btn btn-brown btn-large" type="button" id="open-modal">
             Поиск гостиницы в седоне
           </button>
         </section>
@@ -285,17 +285,17 @@
           >
             <div class="modal-date-row">
               <label class="form-label" for="arrival-date">
-                Дата заезда:
+                Дата Заезда:
               </label>
 
               <div class="form-field">
                 <input
+                  name="chekin"
                   class="form-input"
-                  id="arrival-date"
-                  name="arrival-date"
-                  type="date"
-                  value="2020-04-27"
-                  aria-describedby="arrival-message"
+                  type="text"
+                  id="check-in"
+                  value="27 апреля 2020"
+                  placeholder="Укажите дату"
                   required
                 />
 
@@ -307,17 +307,17 @@
 
             <div class="modal-date-row">
               <label class="form-label" for="departure-date">
-                Дата выезда:
+                Дата Выезда:
               </label>
 
               <div class="form-field">
                 <input
+                  name="chekout"
                   class="form-input"
-                  id="departure-date"
-                  name="departure-date"
-                  type="date"
-                  value="2023-09-01"
-                  aria-describedby="departure-message"
+                  type="text"
+                  value="1 сентября 2023"
+                  id="check-out"
+                  placeholder="Укажите дату"
                   required
                 />
 
@@ -367,7 +367,7 @@
                       aria-label="Информация о возрасте детей"
                       aria-describedby="children-tooltip"
                     >
-                      <span aria-hidden="true">i</span>
+                      <span aria-hidden="true"></span>
                     </button>
 
                     <span
