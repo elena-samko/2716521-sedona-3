@@ -44,6 +44,7 @@ html {
 
 body {
   height: 100%;
+  min-width: 1200px;
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -116,6 +117,16 @@ body {
   height: 2px;
   background-color: #756257;
   content: "";
+}
+
+.nav-link[href]:hover,
+.nav-user-link[href]:hover {
+  opacity: 0.6;
+}
+
+.nav-link[href]:active,
+.nav-user-link[href]:active {
+  opacity: 0.3;
 }
 
 .nav-user-list {
@@ -431,6 +442,7 @@ body {
   font-size: 16px;
   color: #ffffff;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs-link {
@@ -438,11 +450,11 @@ body {
   min-width: 15px;
 }
 
-.breadcrumbs-link:active {
-  opacity: 0.3;
+.breadcrumbs-link[href]:hover {
+  opacity: 0.6;
 }
 
-.breadcrumbs-link:hover {
+.breadcrumbs-link[href]:active {
   opacity: 0.3;
 }
 
@@ -467,7 +479,7 @@ body {
 .catalog {
   padding: 50px 70px 60px;
   width: 1200px;
-  height: 1235px;
+  min-height: 1235px;
 }
 
 .catalog-filter {
@@ -671,6 +683,7 @@ body {
 }
 
 .range-toggle {
+  padding: 0;
   position: absolute;
   width: 20px;
   height: 20px;
@@ -678,6 +691,14 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+.range-toggle:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active {
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+  outline: 3px solid #83b3d3;
 }
 
 .toggle-min {
@@ -784,7 +805,7 @@ body {
 /* HOTELS GALLERY */
 .hotels-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
   padding: 0;
   margin: 0;
@@ -798,6 +819,7 @@ body {
 .hotels-card {
   display: flex;
   flex-direction: column;
+  min-height: 438px;
   padding: 19px;
   border: 1px solid #e5e5e5;
   border-radius: 4px;
@@ -832,12 +854,13 @@ body {
 
 .hotels-card-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px 20px;
 }
 
 .hotels-card .btn {
   min-width: 140px;
+  overflow-wrap: anywhere;
 }
 
 .hotels-card-stars {
@@ -935,7 +958,8 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  min-width: 150px;
+  width: 150px;
+  flex-shrink: 0;
   flex-wrap: wrap;
 }
 
@@ -1068,6 +1092,18 @@ body {
 .btn-transparent:active {
   color: rgba(255, 255, 255, 0.3);
   outline: none;
+}
+
+.btn:disabled {
+  color: #ffffff;
+  background-color: #e5e5e5;
+  cursor: default;
+}
+
+.btn-transparent:disabled {
+  color: #ffffff;
+  background-color: transparent;
+  opacity: 0.1;
 }
 
 /* MODAL */
