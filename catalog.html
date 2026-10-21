@@ -16,7 +16,7 @@
             src="./image/logo-sedona.svg"
             width="140"
             height="70"
-            alt="Логотип города Седона"
+            alt="Логотип города Седона."
           />
         </a>
         <nav class="nav">
@@ -28,27 +28,25 @@
               <a href="about.html" class="nav-link">О Седоне</a>
             </li>
             <li class="nav-item">
-              <a href="catalog.html" class="nav-link nav-link-current"
+              <a class="nav-link nav-link-current" aria-current="page"
                 >Гостиницы</a
               >
             </li>
           </ul>
           <ul class="nav-user-list">
             <li class="nav-user-item">
-              <a href="#" class="nav-user-link search-icon">
+              <a href="search.html" class="nav-user-link search-icon">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="nav-user-item">
-              <a href="#" class="nav-user-link heart-icon">
+              <a href="featred.html" class="nav-user-link heart-icon">
                 <span class="visually-hidden">Избранное</span>
                 <span class="favorites-count">12</span>
               </a>
             </li>
           </ul>
-          <a href="#" class="btn btn-brown btn-action"
-            >Хочу сюда!</a
-          >
+          <a href="catalog.html" class="btn btn-brown btn-action">Хочу сюда!</a>
         </nav>
       </header>
       <main class="main-inner" data-test="main">
@@ -64,7 +62,9 @@
               </a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Гостиницы</a>
+              <span class="breadcrumbs-link" aria-current="page"
+                >Гостиницы</span
+              >
             </li>
           </ul>
           <form
@@ -181,7 +181,7 @@
                   </div>
                 </div>
                 <div class="range-scale">
-                  <div class="range-bar" style="left: 0; width: 226px">
+                  <div class="range-bar">
                     <button type="button" class="range-toggle toggle-min">
                       <span class="visually-hidden"
                         >Изменить минимальную цену</span
@@ -254,14 +254,18 @@
                 src="./image/hotel-amara-resort-spa.webp"
                 width="300"
                 height="212"
-                alt="Фото гостиницы Amara Resort & Spa"
+                alt="Фото гостиницы Amara Resort & Spa."
                 class="hotels-card-photo"
               />
               <h3 class="hotels-card-title">Amara Resort & Spa</h3>
               <div class="hotels-card-container">
                 <p class="hotels-card-type">Гостиница</p>
                 <p class="hotels-card-price">От 4000 ₽</p>
-                <a href="#" class="hotels-card-link btn btn-brown">подробнее</a>
+                <a
+                  href="amara-hotel.html"
+                  class="hotels-card-link btn btn-brown"
+                  >подробнее</a
+                >
                 <button type="button" class="btn btn-blue">в избранное</button>
                 <div class="hotels-card-stars four-stars">
                   <span class="visually-hidden">4 звезды</span>
@@ -274,14 +278,18 @@
                 src="./image/hotel-villas-at-poco-diablo.webp"
                 width="300"
                 height="212"
-                alt="Фото гостиницы Villas at Poco Diablo"
+                alt="Фото гостиницы Villas at Poco Diablo."
                 class="hotels-card-photo"
               />
               <h3 class="hotels-card-title">Villas at Poco Diablo</h3>
               <div class="hotels-card-container">
                 <p class="hotels-card-type">Гостиница</p>
                 <p class="hotels-card-price">От 5000 ₽</p>
-                <a href="#" class="hotels-card-link btn btn-brown">подробнее</a>
+                <a
+                  href="villas-hotel.html"
+                  class="hotels-card-link btn btn-brown"
+                  >подробнее</a
+                >
                 <button
                   type="button"
                   class="hotels-card-favorites btn btn-green"
@@ -299,14 +307,18 @@
                 src="./image/hotel-desert-quail-inn.webp"
                 width="300"
                 height="212"
-                alt="Фото гостиницы Desert Quail Inn"
+                alt="Фото гостиницы Desert Quail Inn."
                 class="hotels-card-photo"
               />
               <h3 class="hotels-card-title">Desert Quail Inn</h3>
               <div class="hotels-card-container">
                 <p class="hotels-card-type">Гостиница</p>
                 <p class="hotels-card-price">От 2500 ₽</p>
-                <a href="#" class="hotels-card-link btn btn-brown">подробнее</a>
+                <a
+                  href="desert-hotel.html"
+                  class="hotels-card-link btn btn-brown"
+                  >подробнее</a
+                >
                 <button
                   type="button"
                   class="hotels-card-favorites btn btn-blue"
@@ -324,14 +336,18 @@
                 src="./image/hotel-greentree-inn.webp"
                 width="300"
                 height="212"
-                alt="Фото гостиницы GreenTree Inn"
+                alt="Фото гостиницы GreenTree Inn."
                 class="hotels-card-photo"
               />
               <h3 class="hotels-card-title">GreenTree Inn</h3>
               <div class="hotels-card-container">
                 <p class="hotels-card-type">Гостиница</p>
                 <p class="hotels-card-price">От 1500 ₽</p>
-                <a href="#" class="hotels-card-link btn btn-brown">подробнее</a>
+                <a
+                  href="green-hotel.html"
+                  class="hotels-card-link btn btn-brown"
+                  >подробнее</a
+                >
                 <button
                   type="button"
                   class="hotels-card-favorites btn btn-blue"
@@ -347,7 +363,11 @@
           </ul>
           <ul class="pagination-list">
             <li class="pagination-item">
-              <a href="#" class="pagination-link pagination-link-current">1</a>
+              <a
+                class="pagination-link pagination-link-current"
+                aria-current="page"
+                >1</a
+              >
             </li>
             <li class="pagination-item">
               <a href="#" class="pagination-link">2</a>
@@ -378,10 +398,13 @@
             <input
               type="email"
               name="email"
-              class="subscribe-inp"
+              class="subscribe-input"
               placeholder="Ваш e-mail"
+              required
             />
-            <button class="btn btn-blue btn-large">Подписаться</button>
+            <button type="submit" class="btn btn-blue btn-large">
+              Подписаться
+            </button>
           </form>
         </section>
       </main>
@@ -444,7 +467,10 @@
         <a href="tel:88128121212" class="footer-contact-number"
           >+7 (812) 812-12-12</a
         >
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-logo-link">
+        <a
+          href="https://htmlacademy.ru/intensive/htmlcss"
+          class="footer-logo-link"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="115"
@@ -551,7 +577,7 @@
               </div>
 
               <div class="modal-guest-group modal-children">
-                <div class="label-wraper">
+                <div class="label-wrapper">
                   <label class="form-label" for="children"> Дети: </label>
 
                   <span class="tooltip">
